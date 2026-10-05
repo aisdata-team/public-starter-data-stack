@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: sis
+    description: Raw tables landed from the student information system. Replace with your own.
+    schema: raw_sis
+    tables:
+      - name: students
+      - name: attendance

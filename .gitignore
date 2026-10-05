@@ -1,0 +1,14 @@
+# Credentials never live in the repository (DECISIONS.md 2026-01-05).
+.env
+.env.*
+!.env.example
+profiles.yml
+*.key.json
+secrets/
+
+__pycache__/
+*.pyc
+.venv/
+target/
+dbt_packages/
+logs/
