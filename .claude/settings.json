@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "deny": [
+      "Bash(bq:*)",
+      "Bash(psql:*)",
+      "Bash(mysql:*)",
+      "Bash(sqlcmd:*)",
+      "Bash(snowsql:*)",
+      "Bash(duckdb:*)",
+      "Bash(gcloud auth:*)",
+      "Bash(dbt run:*)",
+      "Bash(dbt build:*)",
+      "Bash(git push:*)",
+      "Read(./.env)",
+      "Read(./.env.*)",
+      "Read(./secrets/**)",
+      "Read(~/.config/gcloud/**)",
+      "Read(~/.dbt/profiles.yml)"
+    ],
+    "ask": [
+      "Bash(pip install:*)",
+      "Bash(npm install:*)"
+    ]
+  }
+}

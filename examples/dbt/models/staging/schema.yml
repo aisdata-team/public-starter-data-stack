@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: stg_sis__students
+    description: >
+      One row per enrolled student from the student information system. Ids are text. Carries
+      names, so it never feeds a reporting table directly.
+    columns:
+      - name: student_id
+        description: The SIS student id, cast to text.
+        data_tests:
+          - unique
+          - not_null
+      - name: household_id
+        description: The SIS household id, cast to text.
